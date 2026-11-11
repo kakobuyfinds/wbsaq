@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#25234b">
+<title>BBDBuyEU spreadsheet – Produktlinks, Größen und QC-Fotos</title>
+<meta name="description" content="BBDBuyEU spreadsheet auf Deutsch: Zehn Produktkategorien, Tipps zu Größen und QC-Fotos sowie eine Checkliste für Versand und Gesamtkosten.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="BBDBuyEU spreadsheet – Produktlinks, Größen und QC-Fotos">
+<meta property="og:description" content="Produktlinks nach Kategorie finden und Angebote anhand von Maßen, Fotos und Lieferkosten vergleichen.">
+<!-- index.html | Bing 首页未能直接访问，无法核验首页前十个网站。选题参考了补充网页搜索结果。文件保存失败，完整源码见本代码块。 -->
+<style>
+:root{color-scheme:light;--bg:#f3f2fc;--ink:#25234b;--muted:#514f69;--line:#d4d1eb;--white:#fff;--accent:#dbfc82}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #7358b4;outline-offset:4px}
+.wrap{width:min(1160px,calc(100% - 2rem));margin-inline:auto}
+.top,footer{background:var(--ink);color:var(--white)}
+.top .wrap,footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding-block:.85rem}
+.brand{font-weight:800;letter-spacing:.03em}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;align-items:center;gap:clamp(1.25rem,4vw,4rem);padding-block:clamp(1.5rem,5vw,4rem) 1.25rem}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{line-height:1.15}
+h1{font-size:clamp(2.3rem,6.6vw,5.6rem);letter-spacing:-.065em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.65rem,3.2vw,2.65rem);letter-spacing:-.04em}
+h3{font-size:1.2rem}
+p{margin-top:.65rem}
+.lead{max-width:54ch;color:var(--muted)}
+.cta{display:inline-block;margin-top:1rem;padding:.65rem 1.05rem;border:1px solid var(--ink);border-radius:.6rem;background:var(--accent);font-weight:750}
+.hero img,.gallery img{display:block;width:100%;object-fit:contain;background:#fff;border-radius:.65rem}
+.hero img{height:clamp(12rem,31vw,21rem)}
+figcaption,.small{font-size:.87rem;color:var(--muted);margin-top:.3rem}
+.categories{padding:1.15rem;border:1px solid var(--line);border-radius:.85rem;background:var(--white)}
+.categories ul{list-style:none;padding:0;margin:.85rem 0 0;display:flex;flex-wrap:wrap;gap:.55rem}
+.categories a{display:block;padding:.42rem .8rem;border:1px solid var(--line);border-radius:.55rem;font-weight:650;text-decoration:none}
+.categories a:hover,.categories a:focus-visible{background:var(--accent)}
+.section{margin-block:clamp(2rem,5vw,4rem)}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem;margin-top:1rem}
+.gallery img{aspect-ratio:1;height:auto}
+.guides{margin-top:1rem;border-top:1px solid var(--line)}
+article{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:.75rem 2rem;padding-block:1.15rem;border-bottom:1px solid var(--line)}
+article p:first-child{margin-top:0}
+.check{background:#e5e0fa;padding:clamp(1rem,3vw,2rem);border-radius:.85rem}
+dl{margin-bottom:0}
+dt{font-weight:750}
+dd{margin:0 0 .7rem}
+details{border-bottom:1px solid var(--line);padding:.85rem 0}
+summary{cursor:pointer;font-weight:750}
+details p{max-width:75ch}
+@media(max-width:650px){
+  .hero,article{grid-template-columns:1fr}
+  .hero img{height:13rem}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "name": "BBDBuyEU spreadsheet – Fragen zur Produktsuche",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist ein BBDBuyEU spreadsheet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Ein BBDBuyEU spreadsheet ist eine nach Kategorien sortierte Sammlung von Produktlinks. Die verlinkte Angebotsseite liefert die aktuellen Angaben zu Varianten und Verfügbarkeit."}
+    },
+    {
+      "@type": "Question",
+      "name": "Wo führen die Kategorien hin?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Die Kategorien öffnen die entsprechenden Übersichten auf CAFANS. Dort kannst du die aktuell gelisteten Produkte ansehen."}
+    },
+    {
+      "@type": "Question",
+      "name": "Was kann ich auf QC-Fotos erkennen?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Auf Fotos zur Qualitätskontrolle kannst du sichtbare Details wie Nähte, Druck und Verschlüsse prüfen. Für die Passform brauchst du Maße. Für die Echtheit brauchst du zusätzliche Nachweise."}
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Kosten sollte ich vor der Bestellung vergleichen?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Vergleiche Warenpreis, Versand, ausgewiesene Servicegebühren und gegebenenfalls anfallende Einfuhrkosten. Verwende bei beiden Angeboten dasselbe Zielland und dieselbe Währung."}
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/wbsaq/">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+    <span>Deutschsprachiger Einkaufsratgeber</span>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <h1 id="title">BBDBuyEU spreadsheet</h1>
+      <p class="lead">Von der Produktkategorie zur passenden Variante. Hier findest du Einstiege für Schuhe, Kleidung und Accessoires sowie eine Checkliste für Größen, Produktfotos und Lieferkosten.</p>
+      <a class="cta" href="https://www.cafans.com">Produktübersicht auf CAFANS öffnen</a>
+    </div>
+    <figure>
+      <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=640&amp;wid=640" width="640" height="640" alt="Louis Vuitton Monogram-Jeansjacke in der Vorderansicht" fetchpriority="high">
+      <figcaption>Stilbeispiel · Monogram-Jeansjacke von Louis Vuitton</figcaption>
+    </figure>
+  </section>
+
+  <nav class="categories" aria-labelledby="categories">
+    <h2 id="categories">Produktkategorien</h2>
+    <ul>
+      <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies und Pullover</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Jacken</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen und Shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Kopfbedeckungen</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Trikots</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+    </ul>
+  </nav>
+
+  <section class="section" aria-labelledby="guides">
+    <h2 id="guides">So prüfst du einen Fund</h2>
+    <div class="guides">
+      <article>
+        <h3>BBDBuyEU Produktlinks vergleichen</h3>
+        <div>
+          <p>Beginne mit der passenden Kategorie und suche dann nach Modellbezeichnung, Material oder Farbe. Bei Trikots hilft die Frage, ob du ein bedrucktes Modell oder ein schlichtes Trainingsshirt suchst. Bei Sets solltest du prüfen, welche Teile zum Lieferumfang gehören.</p>
+          <p>Speichere zur engeren Auswahl den Produktlink, die Artikelnummer und die gewünschte Variante. Öffne den Link vor dem Kauf erneut und prüfe, ob die gewählte Farbe, Größe und Ausführung weiterhin verfügbar sind.</p>
+        </div>
+      </article>
+      <article>
+        <h3>BBDBuyEU Größen und Passform</h3>
+        <div>
+          <p>Miss ein gut sitzendes Kleidungsstück flach aus. Bei T-Shirts und Hoodies helfen Brustweite und Rückenlänge. Bei Jacken kommen Schulterbreite und Ärmellänge hinzu. Bei Shorts und Hosen sind Bundweite und Innenbeinlänge wichtig.</p>
+          <p>Vergleiche die Fußlänge in Zentimetern mit der Größentabelle für das konkrete Schuhmodell. Prüfe bei Caps den Kopfumfang und den Verstellbereich. Schau bei Schmuck auf Kettenlänge oder Innenumfang und bei Unterwäsche auf die angegebenen Bundmaße.</p>
+        </div>
+      </article>
+      <article>
+        <h3>BBDBuyEU QC-Fotos prüfen</h3>
+        <div>
+          <p>Prüfe, ob die Fotos zur gewählten Variante gehören. Nutze die Vorder- und Rückansicht für den Schnitt und Detailbilder für Nähte, Aufdruck, Reißverschluss oder Schmuckverschluss. Bei Schuhen helfen Sohlenansicht und Seitenprofil.</p>
+          <p>Wenn ein Detail für deine Entscheidung wichtig ist, frage nach einer Nahaufnahme bei neutralem Licht. Bei Maßangaben ist ein Foto mit vollständig sichtbarem Maßband hilfreicher als eine Schätzung anhand des Bildausschnitts.</p>
+        </div>
+      </article>
+      <article>
+        <h3>BBDBuyEU Versand nach Deutschland</h3>
+        <div>
+          <p>Vergleiche Versandangebote mit derselben Lieferadresse, Währung und Produktauswahl. Prüfe, ob die Versandberechnung nach tatsächlichem Gewicht oder nach Paketvolumen erfolgt und ob Sendungsverfolgung enthalten ist.</p>
+          <p>Kontrolliere im letzten Bestellschritt den Gesamtbetrag in Euro, mögliche Einfuhrkosten und die Rückgabebedingungen. Für Lieferungen nach Österreich oder in die Schweiz verwende jeweils eine Adresse im betreffenden Land, damit der Anbieter die zutreffenden Optionen anzeigt.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section check" aria-labelledby="check">
+    <h2 id="check">Checkliste vor dem Kauf</h2>
+    <dl>
+      <dt>Produkt</dt>
+      <dd>Stimmen Artikelnummer, Variante, Materialangabe und Lieferumfang überein?</dd>
+      <dt>Passform</dt>
+      <dd>Wurden flach gemessene Breiten und Körperumfänge korrekt verglichen?</dd>
+      <dt>Fotos</dt>
+      <dd>Sind die für deine Auswahl entscheidenden Details gut erkennbar?</dd>
+      <dt>Lieferung</dt>
+      <dd>Sind Gesamtbetrag, Sendungsverfolgung und Rückgabefrist geklärt?</dd>
+    </dl>
+  </section>
+
+  <section class="section" aria-labelledby="gallery">
+    <h2 id="gallery">Schuhe und Accessoires im Detail</h2>
+    <p class="small">Die Markenfotos dienen als Stilbeispiele. Die verlinkten Kategorien zeigen das aktuelle CAFANS-Sortiment.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://www.nike.com.kw/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwad84f452/nk/da1/3/d/a/2/6/da13da26_ab14_4439_a276_323e6258a224.png?sw=400&amp;sh=400" width="400" height="400" alt="Nike Pegasus 41 Laufschuh" loading="lazy" decoding="async">
+        <figcaption>Nike Pegasus 41</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Gucci Baseballkappe mit GG-Canvas" loading="lazy" decoding="async">
+        <figcaption>Gucci GG-Canvas-Cap</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Orange-Enamel-Clic-H-Bracelet-w-Box_f80dab0b.jpg?v=1744110722&amp;width=420" width="420" height="420" alt="Hermès Clic H Armreif mit orangefarbener Emaille" loading="lazy" decoding="async">
+        <figcaption>Hermès Clic H</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/N2241WOMCYD03S_SBG_E01-2?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;wid=400" width="400" height="500" alt="Dior Petit CD Halskette mit Kristallbesatz" loading="lazy" decoding="async">
+        <figcaption>Dior Petit CD</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq">
+    <h2 id="faq">Häufige Fragen</h2>
+    <details open>
+      <summary>Was ist ein BBDBuyEU spreadsheet?</summary>
+      <p>Ein BBDBuyEU spreadsheet ist eine nach Kategorien sortierte Sammlung von Produktlinks. Die verlinkte Angebotsseite liefert die aktuellen Angaben zu Varianten und Verfügbarkeit.</p>
+    </details>
+    <details>
+      <summary>Wo führen die Kategorien hin?</summary>
+      <p>Die Kategorien öffnen die entsprechenden Übersichten auf CAFANS. Dort kannst du die aktuell gelisteten Produkte ansehen.</p>
+    </details>
+    <details>
+      <summary>Was kann ich auf QC-Fotos erkennen?</summary>
+      <p>Auf Fotos zur Qualitätskontrolle kannst du sichtbare Details wie Nähte, Druck und Verschlüsse prüfen. Für die Passform brauchst du Maße. Für die Echtheit brauchst du zusätzliche Nachweise.</p>
+    </details>
+    <details>
+      <summary>Welche Kosten sollte ich vor der Bestellung vergleichen?</summary>
+      <p>Vergleiche Warenpreis, Versand, ausgewiesene Servicegebühren und gegebenenfalls anfallende Einfuhrkosten. Verwende bei beiden Angeboten dasselbe Zielland und dieselbe Währung.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+    <span>Unabhängiger Ratgeber zur Produktsuche</span>
+  </div>
+</footer>
+</body>
+</html>
